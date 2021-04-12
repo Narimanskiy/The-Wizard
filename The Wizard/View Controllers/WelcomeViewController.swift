@@ -15,7 +15,6 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
         player.musicPlay()
         
-        //ABosaNovaSh
     }
 
 

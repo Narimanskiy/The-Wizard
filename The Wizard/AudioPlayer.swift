@@ -30,7 +30,7 @@ class Music {
     
     //Stop the Background Music
     func musicPlay() {
-        player?.volume = 0.1
+        player?.volume = 0.3
     }
     
     func musicMute() {

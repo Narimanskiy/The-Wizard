@@ -17,6 +17,7 @@
 		CE1CEAE32623D7E100989768 /* a_bosanova.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE1CEAE22623D7E100989768 /* a_bosanova.ttf */; };
 		CE1CEAE62623D92F00989768 /* mainMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE1CEAE52623D92F00989768 /* mainMusic.mp3 */; };
 		CE1CEAE92623D97B00989768 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1CEAE82623D97B00989768 /* AudioPlayer.swift */; };
+		CE1CEAED2624448100989768 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1CEAEC2624448100989768 /* QuestionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		CE1CEAE22623D7E100989768 /* a_bosanova.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = a_bosanova.ttf; sourceTree = "<group>"; };
 		CE1CEAE52623D92F00989768 /* mainMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mainMusic.mp3; sourceTree = "<group>"; };
 		CE1CEAE82623D97B00989768 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		CE1CEAEC2624448100989768 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,15 +66,15 @@
 		CE1CEAC82623D17600989768 /* The Wizard */ = {
 			isa = PBXGroup;
 			children = (
-				CE1CEADE2623D56700989768 /* Music&Font */,
 				CE1CEAC92623D17600989768 /* AppDelegate.swift */,
-				CE1CEACB2623D17600989768 /* SceneDelegate.swift */,
-				CE1CEACD2623D17600989768 /* WelcomeViewController.swift */,
-				CE1CEAE82623D97B00989768 /* AudioPlayer.swift */,
-				CE1CEACF2623D17600989768 /* Main.storyboard */,
 				CE1CEAD22623D17900989768 /* Assets.xcassets */,
-				CE1CEAD42623D17900989768 /* LaunchScreen.storyboard */,
+				CE1CEAE82623D97B00989768 /* AudioPlayer.swift */,
 				CE1CEAD72623D17900989768 /* Info.plist */,
+				CE1CEAD42623D17900989768 /* LaunchScreen.storyboard */,
+				CE1CEACF2623D17600989768 /* Main.storyboard */,
+				CE1CEADE2623D56700989768 /* Music&Font */,
+				CE1CEACB2623D17600989768 /* SceneDelegate.swift */,
+				CE1CEAEF2624448B00989768 /* View Controllers */,
 			);
 			path = "The Wizard";
 			sourceTree = "<group>";
@@ -85,6 +87,15 @@
 				CE1CEADF2623D59700989768 /* a_bosanovash.ttf */,
 			);
 			path = "Music&Font";
+			sourceTree = "<group>";
+		};
+		CE1CEAEF2624448B00989768 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE1CEACD2623D17600989768 /* WelcomeViewController.swift */,
+				CE1CEAEC2624448100989768 /* QuestionViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE1CEACE2623D17600989768 /* WelcomeViewController.swift in Sources */,
+				CE1CEAED2624448100989768 /* QuestionViewController.swift in Sources */,
 				CE1CEACA2623D17600989768 /* AppDelegate.swift in Sources */,
 				CE1CEACC2623D17600989768 /* SceneDelegate.swift in Sources */,
 				CE1CEAE92623D97B00989768 /* AudioPlayer.swift in Sources */,

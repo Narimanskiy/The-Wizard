@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		CE1CEACA2623D17600989768 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1CEAC92623D17600989768 /* AppDelegate.swift */; };
 		CE1CEACC2623D17600989768 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1CEACB2623D17600989768 /* SceneDelegate.swift */; };
-		CE1CEACE2623D17600989768 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1CEACD2623D17600989768 /* ViewController.swift */; };
+		CE1CEACE2623D17600989768 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1CEACD2623D17600989768 /* WelcomeViewController.swift */; };
 		CE1CEAD12623D17600989768 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1CEACF2623D17600989768 /* Main.storyboard */; };
 		CE1CEAD32623D17900989768 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE1CEAD22623D17900989768 /* Assets.xcassets */; };
 		CE1CEAD62623D17900989768 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1CEAD42623D17900989768 /* LaunchScreen.storyboard */; };
+		CE1CEAE02623D59700989768 /* a_bosanovash.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE1CEADF2623D59700989768 /* a_bosanovash.ttf */; };
+		CE1CEAE32623D7E100989768 /* a_bosanova.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE1CEAE22623D7E100989768 /* a_bosanova.ttf */; };
+		CE1CEAE62623D92F00989768 /* mainMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE1CEAE52623D92F00989768 /* mainMusic.mp3 */; };
+		CE1CEAE92623D97B00989768 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1CEAE82623D97B00989768 /* AudioPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE1CEAC62623D17600989768 /* The Wizard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Wizard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1CEAC92623D17600989768 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE1CEACB2623D17600989768 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE1CEACD2623D17600989768 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE1CEACD2623D17600989768 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		CE1CEAD02623D17600989768 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE1CEAD22623D17900989768 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE1CEAD52623D17900989768 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE1CEAD72623D17900989768 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE1CEADF2623D59700989768 /* a_bosanovash.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = a_bosanovash.ttf; sourceTree = "<group>"; };
+		CE1CEAE22623D7E100989768 /* a_bosanova.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = a_bosanova.ttf; sourceTree = "<group>"; };
+		CE1CEAE52623D92F00989768 /* mainMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mainMusic.mp3; sourceTree = "<group>"; };
+		CE1CEAE82623D97B00989768 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,27 @@
 		CE1CEAC82623D17600989768 /* The Wizard */ = {
 			isa = PBXGroup;
 			children = (
+				CE1CEADE2623D56700989768 /* Music&Font */,
 				CE1CEAC92623D17600989768 /* AppDelegate.swift */,
 				CE1CEACB2623D17600989768 /* SceneDelegate.swift */,
-				CE1CEACD2623D17600989768 /* ViewController.swift */,
+				CE1CEACD2623D17600989768 /* WelcomeViewController.swift */,
+				CE1CEAE82623D97B00989768 /* AudioPlayer.swift */,
 				CE1CEACF2623D17600989768 /* Main.storyboard */,
 				CE1CEAD22623D17900989768 /* Assets.xcassets */,
 				CE1CEAD42623D17900989768 /* LaunchScreen.storyboard */,
 				CE1CEAD72623D17900989768 /* Info.plist */,
 			);
 			path = "The Wizard";
+			sourceTree = "<group>";
+		};
+		CE1CEADE2623D56700989768 /* Music&Font */ = {
+			isa = PBXGroup;
+			children = (
+				CE1CEAE52623D92F00989768 /* mainMusic.mp3 */,
+				CE1CEAE22623D7E100989768 /* a_bosanova.ttf */,
+				CE1CEADF2623D59700989768 /* a_bosanovash.ttf */,
+			);
+			path = "Music&Font";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +144,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1CEAE02623D59700989768 /* a_bosanovash.ttf in Resources */,
 				CE1CEAD62623D17900989768 /* LaunchScreen.storyboard in Resources */,
+				CE1CEAE32623D7E100989768 /* a_bosanova.ttf in Resources */,
 				CE1CEAD32623D17900989768 /* Assets.xcassets in Resources */,
 				CE1CEAD12623D17600989768 /* Main.storyboard in Resources */,
+				CE1CEAE62623D92F00989768 /* mainMusic.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,9 +160,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE1CEACE2623D17600989768 /* ViewController.swift in Sources */,
+				CE1CEACE2623D17600989768 /* WelcomeViewController.swift in Sources */,
 				CE1CEACA2623D17600989768 /* AppDelegate.swift in Sources */,
 				CE1CEACC2623D17600989768 /* SceneDelegate.swift in Sources */,
+				CE1CEAE92623D97B00989768 /* AudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

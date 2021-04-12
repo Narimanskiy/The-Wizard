@@ -107,7 +107,7 @@
                                         <variation key="heightClass=regular-widthClass=compact" spacing="50"/>
                                     </stackView>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Oca-Hz-tDs">
-                                        <rect key="frame" x="37" y="150" width="300" height="30"/>
+                                        <rect key="frame" x="29" y="150" width="316" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="29" id="a2d-19-pM9"/>
                                         </constraints>
@@ -257,7 +257,13 @@
                             <constraint firstItem="uLS-WS-9iR" firstAttribute="trailing" secondItem="xEc-F3-qyM" secondAttribute="trailing" constant="20" id="wwV-r5-ype"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="fsw-N8-NUk"/>
+                    <navigationItem key="navigationItem" id="fsw-N8-NUk">
+                        <barButtonItem key="rightBarButtonItem" title="DELETE ME" id="ged-mC-Hcr">
+                            <connections>
+                                <segue destination="Ad7-es-RRw" kind="show" id="VXp-37-HZY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="Ad7-es-RRw" kind="show" id="CTm-yL-IEL"/>
                     </connections>
@@ -266,21 +272,53 @@
             </objects>
             <point key="canvasLocation" x="1840.5797101449277" y="89.732142857142847"/>
         </scene>
-        <!--View Controller-->
+        <!--Results View Controller-->
         <scene sceneID="xG9-Ve-tuk">
             <objects>
-                <viewController id="Ad7-es-RRw" sceneMemberID="viewController">
+                <viewController id="Ad7-es-RRw" customClass="ResultsViewController" customModule="The_Wizard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vzi-xo-1pJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="51" translatesAutoresizingMaskIntoConstraints="NO" id="hqC-Cm-wKw">
+                                <rect key="frame" x="20" y="230" width="374" height="382.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Slizerin" translatesAutoresizingMaskIntoConstraints="NO" id="YMk-fP-hYC">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="300"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="SfJ-z8-vZk"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Итоговый результат" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9kY-jB-qSB">
+                                        <rect key="frame" x="0.0" y="351" width="374" height="31.5"/>
+                                        <fontDescription key="fontDescription" name="ABosaNova" family="a_BosaNova" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="KrM-Fe-iAI"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hqC-Cm-wKw" firstAttribute="leading" secondItem="KrM-Fe-iAI" secondAttribute="leading" constant="20" id="dbd-ZA-sl9"/>
+                            <constraint firstItem="hqC-Cm-wKw" firstAttribute="centerY" secondItem="vzi-xo-1pJ" secondAttribute="centerY" id="f2z-bZ-7qJ"/>
+                            <constraint firstItem="KrM-Fe-iAI" firstAttribute="trailing" secondItem="hqC-Cm-wKw" secondAttribute="trailing" constant="20" id="jgR-uA-84k"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="4PP-pP-qWY"/>
+                    <navigationItem key="navigationItem" id="4PP-pP-qWY">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="metla" id="z03-xa-qVF">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="7NJ-04-lfG" kind="unwind" unwindAction="unwind:" id="2Wh-6J-ECT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ms-pM-AoP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="7NJ-04-lfG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2761" y="90"/>
+            <point key="canvasLocation" x="2760.8695652173915" y="89.732142857142847"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="k1Z-Xe-Bgi">
@@ -302,13 +340,15 @@
             <point key="canvasLocation" x="934.78260869565224" y="93.75"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="CTm-yL-IEL"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Dambledor" width="614" height="860"/>
+        <image name="Slizerin" width="416" height="466"/>
         <image name="TomReddle" width="614" height="860"/>
+        <image name="metla" width="135" height="52"/>
         <image name="Дары Смерти-4" width="179" height="166"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

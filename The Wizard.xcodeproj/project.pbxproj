@@ -19,6 +19,10 @@
 		CE1CEAE92623D97B00989768 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1CEAE82623D97B00989768 /* AudioPlayer.swift */; };
 		CE1CEAED2624448100989768 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1CEAEC2624448100989768 /* QuestionViewController.swift */; };
 		CE1CEAF3262463C300989768 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1CEAF2262463C300989768 /* ResultsViewController.swift */; };
+		CE1CEAFD26246AE100989768 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1CEAFC26246AE100989768 /* Question.swift */; };
+		CE1CEB0026246B0000989768 /* QuestionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1CEAFF26246B0000989768 /* QuestionType.swift */; };
+		CE1CEB0326246B6100989768 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1CEB0226246B6100989768 /* Answer.swift */; };
+		CE1CEB0626246B8000989768 /* HouseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1CEB0526246B8000989768 /* HouseType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		CE1CEAE82623D97B00989768 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		CE1CEAEC2624448100989768 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		CE1CEAF2262463C300989768 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		CE1CEAFC26246AE100989768 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		CE1CEAFF26246B0000989768 /* QuestionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionType.swift; sourceTree = "<group>"; };
+		CE1CEB0226246B6100989768 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		CE1CEB0526246B8000989768 /* HouseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,14 +76,10 @@
 		CE1CEAC82623D17600989768 /* The Wizard */ = {
 			isa = PBXGroup;
 			children = (
-				CE1CEAC92623D17600989768 /* AppDelegate.swift */,
-				CE1CEAD22623D17900989768 /* Assets.xcassets */,
-				CE1CEAE82623D97B00989768 /* AudioPlayer.swift */,
-				CE1CEAD72623D17900989768 /* Info.plist */,
-				CE1CEAD42623D17900989768 /* LaunchScreen.storyboard */,
-				CE1CEACF2623D17600989768 /* Main.storyboard */,
+				CE1CEAF7262466FD00989768 /* App */,
+				CE1CEAF6262466A800989768 /* Models */,
 				CE1CEADE2623D56700989768 /* Music&Font */,
-				CE1CEACB2623D17600989768 /* SceneDelegate.swift */,
+				CE1CEAF5262466A000989768 /* View */,
 				CE1CEAEF2624448B00989768 /* View Controllers */,
 			);
 			path = "The Wizard";
@@ -84,6 +88,7 @@
 		CE1CEADE2623D56700989768 /* Music&Font */ = {
 			isa = PBXGroup;
 			children = (
+				CE1CEAE82623D97B00989768 /* AudioPlayer.swift */,
 				CE1CEAE52623D92F00989768 /* mainMusic.mp3 */,
 				CE1CEAE22623D7E100989768 /* a_bosanova.ttf */,
 				CE1CEADF2623D59700989768 /* a_bosanovash.ttf */,
@@ -99,6 +104,37 @@
 				CE1CEAF2262463C300989768 /* ResultsViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		CE1CEAF5262466A000989768 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE1CEAD42623D17900989768 /* LaunchScreen.storyboard */,
+				CE1CEACF2623D17600989768 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE1CEAF6262466A800989768 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE1CEB0226246B6100989768 /* Answer.swift */,
+				CE1CEB0526246B8000989768 /* HouseType.swift */,
+				CE1CEAFC26246AE100989768 /* Question.swift */,
+				CE1CEAFF26246B0000989768 /* QuestionType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE1CEAF7262466FD00989768 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CE1CEAC92623D17600989768 /* AppDelegate.swift */,
+				CE1CEAD22623D17900989768 /* Assets.xcassets */,
+				CE1CEAD72623D17900989768 /* Info.plist */,
+				CE1CEACB2623D17600989768 /* SceneDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,9 +213,13 @@
 				CE1CEACE2623D17600989768 /* WelcomeViewController.swift in Sources */,
 				CE1CEAED2624448100989768 /* QuestionViewController.swift in Sources */,
 				CE1CEACA2623D17600989768 /* AppDelegate.swift in Sources */,
+				CE1CEB0326246B6100989768 /* Answer.swift in Sources */,
 				CE1CEACC2623D17600989768 /* SceneDelegate.swift in Sources */,
 				CE1CEAE92623D97B00989768 /* AudioPlayer.swift in Sources */,
+				CE1CEB0626246B8000989768 /* HouseType.swift in Sources */,
+				CE1CEAFD26246AE100989768 /* Question.swift in Sources */,
 				CE1CEAF3262463C300989768 /* ResultsViewController.swift in Sources */,
+				CE1CEB0026246B0000989768 /* QuestionType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +368,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5365HC76W9;
-				INFOPLIST_FILE = "The Wizard/Info.plist";
+				INFOPLIST_FILE = "The Wizard/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -347,7 +387,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5365HC76W9;
-				INFOPLIST_FILE = "The Wizard/Info.plist";
+				INFOPLIST_FILE = "The Wizard/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -71,7 +71,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="aJM-aG-xQq">
-                                <rect key="frame" x="20" y="76" width="374" height="268.5"/>
+                                <rect key="frame" x="20" y="76" width="374" height="31.5"/>
                                 <fontDescription key="fontDescription" name="ABosaNova" family="a_BosaNova" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -82,45 +82,50 @@
                                 <color key="progressTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="trackTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </progressView>
-                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xEc-F3-qyM">
-                                <rect key="frame" x="20" y="356" width="374" height="225"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="V8G-Hj-76C">
+                                <rect key="frame" x="20" y="283.5" width="374" height="275"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="firstBaseline" spacing="90" translatesAutoresizingMaskIntoConstraints="NO" id="H4E-8u-BiY">
-                                        <rect key="frame" x="52" y="0.0" width="270" height="150"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="74" translatesAutoresizingMaskIntoConstraints="NO" id="EtA-r2-7ye">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="149"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TomReddle" translatesAutoresizingMaskIntoConstraints="NO" id="4Bm-mw-j8N">
-                                                <rect key="frame" x="0.0" y="0.0" width="110" height="150"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TomReddle" translatesAutoresizingMaskIntoConstraints="NO" id="CfD-dJ-HI2">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="149"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="150" id="48T-qY-YW6"/>
-                                                    <constraint firstAttribute="width" constant="110" id="QXx-mq-BAY"/>
+                                                    <constraint firstAttribute="width" constant="150" id="Jqz-wf-QRx"/>
+                                                    <constraint firstAttribute="height" constant="149" id="v1z-rl-ERI"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dambledor" translatesAutoresizingMaskIntoConstraints="NO" id="WcN-af-Xal">
-                                                <rect key="frame" x="160" y="0.0" width="110" height="150"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dambledor" translatesAutoresizingMaskIntoConstraints="NO" id="0QT-aa-TVf">
+                                                <rect key="frame" x="224" y="0.0" width="150" height="149"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="150" id="Co7-sD-Ca9"/>
-                                                    <constraint firstAttribute="width" constant="110" id="i8M-my-nhv"/>
+                                                    <constraint firstAttribute="width" constant="150" id="IPn-Bm-4qj"/>
+                                                    <constraint firstAttribute="height" constant="149" id="Oo4-mV-QOp"/>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
-                                        <variation key="heightClass=compact-widthClass=regular" spacing="200"/>
-                                        <variation key="heightClass=regular-widthClass=compact" spacing="50"/>
                                     </stackView>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Oca-Hz-tDs">
-                                        <rect key="frame" x="29" y="150" width="316" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="RAA-Oh-rAF">
+                                        <rect key="frame" x="0.0" y="150" width="374" height="125"/>
+                                        <subviews>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="DDP-6n-6uF">
+                                                <rect key="frame" x="-2" y="0.0" width="378" height="31"/>
+                                                <color key="minimumTrackTintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="maximumTrackTintColor" red="0.23456501960754395" green="0.069409832358360291" blue="0.052437230944633484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="thumbTintColor" red="0.24207875130000001" green="0.36997920270000001" blue="0.48236775399999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </slider>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTf-6L-gOA">
+                                                <rect key="frame" x="95.5" y="80" width="183" height="45"/>
+                                                <fontDescription key="fontDescription" name="ABosaNovaSh" family="a_BosaNovaSh" pointSize="30"/>
+                                                <state key="normal" title="ПОДТВЕРДИТЬ">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="29" id="a2d-19-pM9"/>
+                                            <constraint firstAttribute="trailing" secondItem="DDP-6n-6uF" secondAttribute="trailing" id="nKJ-AZ-HOc"/>
+                                            <constraint firstItem="DDP-6n-6uF" firstAttribute="leading" secondItem="RAA-Oh-rAF" secondAttribute="leading" id="tA0-Hs-63k"/>
                                         </constraints>
-                                        <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
-                                        <color key="maximumTrackTintColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </slider>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKt-Ya-ntb">
-                                        <rect key="frame" x="95.5" y="179" width="183" height="46"/>
-                                        <fontDescription key="fontDescription" name="ABosaNovaSh" family="a_BosaNovaSh" pointSize="30"/>
-                                        <state key="normal" title="ПОДТВЕРДИТЬ">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WE1-OH-jBP">
@@ -238,24 +243,26 @@
                         <viewLayoutGuide key="safeArea" id="uLS-WS-9iR"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="xEc-F3-qyM" firstAttribute="centerY" secondItem="N2H-XR-IV8" secondAttribute="centerY" constant="47.5" id="1bw-j6-I9J"/>
-                            <constraint firstItem="xEc-F3-qyM" firstAttribute="leading" secondItem="uLS-WS-9iR" secondAttribute="leading" constant="20" id="3K9-KF-eho"/>
-                            <constraint firstItem="xEc-F3-qyM" firstAttribute="centerX" secondItem="N2H-XR-IV8" secondAttribute="centerX" id="L8D-Ty-4Lh"/>
+                            <constraint firstItem="V8G-Hj-76C" firstAttribute="centerY" secondItem="N2H-XR-IV8" secondAttribute="centerY" id="7Wa-k3-Lc6"/>
+                            <constraint firstItem="V8G-Hj-76C" firstAttribute="centerX" secondItem="N2H-XR-IV8" secondAttribute="centerX" id="8R6-OP-dOx"/>
                             <constraint firstItem="uLS-WS-9iR" firstAttribute="trailing" secondItem="66X-YK-SS9" secondAttribute="trailing" constant="20" id="MK5-Uw-VeO"/>
                             <constraint firstItem="Wia-xr-PrX" firstAttribute="centerX" secondItem="N2H-XR-IV8" secondAttribute="centerX" id="Pc0-9j-xoc"/>
                             <constraint firstItem="uLS-WS-9iR" firstAttribute="trailing" secondItem="WE1-OH-jBP" secondAttribute="trailing" constant="20" id="QbP-Ub-3T5"/>
                             <constraint firstItem="WE1-OH-jBP" firstAttribute="leading" secondItem="uLS-WS-9iR" secondAttribute="leading" constant="20" id="WGL-AT-0CY"/>
                             <constraint firstItem="uLS-WS-9iR" firstAttribute="trailing" secondItem="aJM-aG-xQq" secondAttribute="trailing" constant="20" id="WWi-xk-SJW"/>
                             <constraint firstItem="aJM-aG-xQq" firstAttribute="top" secondItem="uLS-WS-9iR" secondAttribute="top" constant="20" id="d8f-Fs-LiE"/>
-                            <constraint firstItem="xEc-F3-qyM" firstAttribute="top" secondItem="aJM-aG-xQq" secondAttribute="bottom" constant="11.5" id="eQt-Lh-3Pa"/>
                             <constraint firstItem="66X-YK-SS9" firstAttribute="leading" secondItem="uLS-WS-9iR" secondAttribute="leading" constant="20" id="fos-Vu-VVh"/>
                             <constraint firstItem="uLS-WS-9iR" firstAttribute="bottom" secondItem="66X-YK-SS9" secondAttribute="bottom" constant="20" id="iYA-9b-xLz"/>
                             <constraint firstItem="Wia-xr-PrX" firstAttribute="centerY" secondItem="N2H-XR-IV8" secondAttribute="centerY" constant="32" id="ln0-XM-LmT"/>
                             <constraint firstItem="WE1-OH-jBP" firstAttribute="centerY" secondItem="N2H-XR-IV8" secondAttribute="centerY" constant="15" id="nBB-HM-5yF"/>
-                            <constraint firstItem="66X-YK-SS9" firstAttribute="top" secondItem="N2H-XR-IV8" secondAttribute="top" constant="784" id="nhD-9L-EkB"/>
                             <constraint firstItem="aJM-aG-xQq" firstAttribute="leading" secondItem="uLS-WS-9iR" secondAttribute="leading" constant="20" id="twM-i2-5fr"/>
-                            <constraint firstItem="uLS-WS-9iR" firstAttribute="trailing" secondItem="xEc-F3-qyM" secondAttribute="trailing" constant="20" id="wwV-r5-ype"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="WE1-OH-jBP"/>
+                                <exclude reference="Wia-xr-PrX"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="fsw-N8-NUk">
                         <barButtonItem key="rightBarButtonItem" title="DELETE ME" id="ged-mC-Hcr">
@@ -265,6 +272,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="multipleStackView" destination="WE1-OH-jBP" id="3TC-Hz-yL8"/>
+                        <outlet property="singleStackView" destination="Wia-xr-PrX" id="VEI-wq-jGc"/>
+                        <outlet property="sliderStackView" destination="V8G-Hj-76C" id="luJ-1f-hg6"/>
                         <segue destination="Ad7-es-RRw" kind="show" id="CTm-yL-IEL"/>
                     </connections>
                 </viewController>
@@ -329,6 +339,17 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8TM-Lv-1YL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.0039216279979999999" green="0.0039214612919999999" blue="0.0039215744470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="ABosaNova" family="a_BosaNova" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" systemColor="labelColor"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="ABosaNova" family="a_BosaNova" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -349,8 +370,8 @@
         <image name="TomReddle" width="614" height="860"/>
         <image name="metla" width="135" height="52"/>
         <image name="Дары Смерти-4" width="179" height="166"/>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

@@ -18,7 +18,7 @@ struct Question {
             Answer(text: "Орёл", type: .kogtevran),
             Answer(text: "Змея", type: .slizerin),
         ]),
-        Question(text: "Хобби", type: .multiply, answers: [
+        Question(text: "Хобби", type: .multiple, answers: [
             Answer(text: "Болтать с Хагридом", type: .griffindor),
             Answer(text: "Изучение природы", type: .puffendyi),
             Answer(text: "Квиддич", type: .kogtevran),

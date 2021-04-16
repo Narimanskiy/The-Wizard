@@ -6,5 +6,5 @@
 //
 
 enum QuestionType {
-    case single, multiply, slider
+    case single, multiple, slider
 }

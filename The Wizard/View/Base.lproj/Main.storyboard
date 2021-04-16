@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -21,20 +21,20 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="The_Wizard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Дары Смерти-4" translatesAutoresizingMaskIntoConstraints="NO" id="uNB-Fs-Icj">
-                                <rect key="frame" x="117.5" y="365" width="179" height="166"/>
+                                <rect key="frame" x="98" y="323" width="179" height="166"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="А какой ты волшебник?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vM7-yl-rk0">
-                                <rect key="frame" x="20" y="64" width="374" height="31.5"/>
+                                <rect key="frame" x="20" y="64" width="335" height="63"/>
                                 <fontDescription key="fontDescription" name="ABosaNova" family="a_BosaNova" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gc-Tg-k2a">
-                                <rect key="frame" x="80" y="801" width="254" height="51"/>
+                                <rect key="frame" x="80" y="717" width="215" height="51"/>
                                 <fontDescription key="fontDescription" name="ABosaNovaSh" family="a_BosaNovaSh" pointSize="35"/>
                                 <state key="normal" title="ВЫЯСНИТЬ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -67,23 +67,23 @@
             <objects>
                 <viewController id="01K-UG-kyg" customClass="QuestionViewController" customModule="The_Wizard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N2H-XR-IV8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="aJM-aG-xQq">
-                                <rect key="frame" x="20" y="76" width="374" height="31.5"/>
+                                <rect key="frame" x="20" y="76" width="335" height="31.666666666666671"/>
                                 <fontDescription key="fontDescription" name="ABosaNova" family="a_BosaNova" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="66X-YK-SS9">
-                                <rect key="frame" x="20" y="784" width="374" height="4"/>
+                                <rect key="frame" x="20" y="700" width="335" height="4"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="progressTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="trackTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </progressView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="V8G-Hj-76C">
-                                <rect key="frame" x="20" y="283.5" width="374" height="275"/>
+                                <rect key="frame" x="0.66666666666665719" y="241.66666666666663" width="374" height="275"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="74" translatesAutoresizingMaskIntoConstraints="NO" id="EtA-r2-7ye">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="149"/>
@@ -105,20 +105,23 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="RAA-Oh-rAF">
-                                        <rect key="frame" x="0.0" y="150" width="374" height="125"/>
+                                        <rect key="frame" x="0.0" y="150.00000000000003" width="374" height="124.99999999999997"/>
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="DDP-6n-6uF">
                                                 <rect key="frame" x="-2" y="0.0" width="378" height="31"/>
-                                                <color key="minimumTrackTintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <color key="maximumTrackTintColor" red="0.23456501960754395" green="0.069409832358360291" blue="0.052437230944633484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="minimumTrackTintColor" red="0.23456501960754395" green="0.069409832358360291" blue="0.052437230944633484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="maximumTrackTintColor" red="0.082691647112369537" green="0.35421091318130493" blue="0.098696835339069366" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="thumbTintColor" red="0.24207875130000001" green="0.36997920270000001" blue="0.48236775399999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </slider>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTf-6L-gOA">
-                                                <rect key="frame" x="95.5" y="80" width="183" height="45"/>
+                                                <rect key="frame" x="95.333333333333314" y="80" width="183" height="45"/>
                                                 <fontDescription key="fontDescription" name="ABosaNovaSh" family="a_BosaNovaSh" pointSize="30"/>
                                                 <state key="normal" title="ПОДТВЕРДИТЬ">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="sliderButtonPressed" destination="01K-UG-kyg" eventType="touchUpInside" id="Vhf-wm-TYN"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -128,20 +131,20 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WE1-OH-jBP">
-                                <rect key="frame" x="20" y="341.5" width="374" height="189"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="WE1-OH-jBP">
+                                <rect key="frame" x="20" y="284.66666666666669" width="335" height="219"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ui-hR-kg5">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6m-iQ-LHw">
-                                                <rect key="frame" x="0.0" y="0.0" width="325" height="31"/>
-                                                <fontDescription key="fontDescription" name="ABosaNova" family="a_BosaNova" pointSize="32"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="286" height="31"/>
+                                                <fontDescription key="fontDescription" name="ABosaNova" family="a_BosaNova" pointSize="28"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jfs-2T-uDZ">
-                                                <rect key="frame" x="325" y="0.0" width="51" height="31"/>
+                                                <rect key="frame" x="286" y="0.0" width="51" height="31"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="onTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="thumbTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -149,16 +152,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9D8-Dr-fOe">
-                                        <rect key="frame" x="0.0" y="39" width="374" height="31"/>
+                                        <rect key="frame" x="0.0" y="43" width="335" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ClT-4c-POD">
-                                                <rect key="frame" x="0.0" y="0.0" width="325" height="31"/>
-                                                <fontDescription key="fontDescription" name="ABosaNova" family="a_BosaNova" pointSize="32"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="286" height="31"/>
+                                                <fontDescription key="fontDescription" name="ABosaNova" family="a_BosaNova" pointSize="28"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MAE-I8-use">
-                                                <rect key="frame" x="325" y="0.0" width="51" height="31"/>
+                                                <rect key="frame" x="286" y="0.0" width="51" height="31"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="onTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="thumbTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -166,76 +169,92 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4sW-Zv-F4D">
-                                        <rect key="frame" x="0.0" y="78" width="374" height="31"/>
+                                        <rect key="frame" x="0.0" y="86" width="335" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WhU-Ve-ckV">
-                                                <rect key="frame" x="0.0" y="0.0" width="325" height="31"/>
-                                                <fontDescription key="fontDescription" name="ABosaNova" family="a_BosaNova" pointSize="32"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="286" height="31"/>
+                                                <fontDescription key="fontDescription" name="ABosaNova" family="a_BosaNova" pointSize="28"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t0b-Tm-TTn">
-                                                <rect key="frame" x="325" y="0.0" width="51" height="31"/>
+                                                <rect key="frame" x="286" y="0.0" width="51" height="31"/>
                                                 <color key="onTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="thumbTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </switch>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jFx-Ga-gXN">
-                                        <rect key="frame" x="0.0" y="117" width="374" height="31"/>
+                                        <rect key="frame" x="0.0" y="129" width="335" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tSH-Nw-OEb">
-                                                <rect key="frame" x="0.0" y="0.0" width="325" height="31"/>
-                                                <fontDescription key="fontDescription" name="ABosaNova" family="a_BosaNova" pointSize="32"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="286" height="31"/>
+                                                <fontDescription key="fontDescription" name="ABosaNova" family="a_BosaNova" pointSize="26"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Np3-5Y-mJh">
-                                                <rect key="frame" x="325" y="0.0" width="51" height="31"/>
+                                                <rect key="frame" x="286" y="0.0" width="51" height="31"/>
                                                 <color key="onTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="thumbTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </switch>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tb-Fq-xcO">
-                                        <rect key="frame" x="0.0" y="156" width="374" height="33"/>
-                                        <fontDescription key="fontDescription" name="ABosaNova" family="a_BosaNova" pointSize="20"/>
+                                        <rect key="frame" x="0.0" y="172" width="335" height="47"/>
+                                        <fontDescription key="fontDescription" name="ABosaNovaSh" family="a_BosaNovaSh" pointSize="32"/>
                                         <state key="normal" title="ПОДТВЕРДИТЬ">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" red="0.0039216279979999999" green="0.0039214612919999999" blue="0.0039215744470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="multiButtonPressed" destination="01K-UG-kyg" eventType="touchUpInside" id="Nlz-pd-RV7"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wia-xr-PrX">
-                                <rect key="frame" x="172" y="370" width="70" height="166"/>
+                                <rect key="frame" x="172.66666666666666" y="284" width="30" height="254"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3jc-8A-35g">
-                                        <rect key="frame" x="0.0" y="0.0" width="70" height="34"/>
-                                        <fontDescription key="fontDescription" name="ABosaNovaSh" family="a_BosaNovaSh" pointSize="20"/>
-                                        <state key="normal" title="Button">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="56"/>
+                                        <fontDescription key="fontDescription" name="ABosaNovaSh" family="a_BosaNovaSh" pointSize="40"/>
+                                        <state key="normal">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="singleButtonPressed:" destination="01K-UG-kyg" eventType="touchUpInside" id="bYt-kb-cT3"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GaP-8b-kaz">
-                                        <rect key="frame" x="0.0" y="44" width="70" height="34"/>
-                                        <fontDescription key="fontDescription" name="ABosaNovaSh" family="a_BosaNovaSh" pointSize="20"/>
-                                        <state key="normal" title="Button">
+                                        <rect key="frame" x="0.0" y="66" width="30" height="56"/>
+                                        <fontDescription key="fontDescription" name="ABosaNovaSh" family="a_BosaNovaSh" pointSize="40"/>
+                                        <state key="normal">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="singleButtonPressed:" destination="01K-UG-kyg" eventType="touchUpInside" id="kG0-1B-cET"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GP5-qK-c61">
-                                        <rect key="frame" x="0.0" y="88" width="70" height="34"/>
-                                        <fontDescription key="fontDescription" name="ABosaNovaSh" family="a_BosaNovaSh" pointSize="20"/>
-                                        <state key="normal" title="Button">
+                                        <rect key="frame" x="0.0" y="132" width="30" height="56"/>
+                                        <fontDescription key="fontDescription" name="ABosaNovaSh" family="a_BosaNovaSh" pointSize="40"/>
+                                        <state key="normal">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="singleButtonPressed:" destination="01K-UG-kyg" eventType="touchUpInside" id="7t3-sx-NUn"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Spj-nk-vnQ">
-                                        <rect key="frame" x="0.0" y="132" width="70" height="34"/>
-                                        <fontDescription key="fontDescription" name="ABosaNovaSh" family="a_BosaNovaSh" pointSize="20"/>
-                                        <state key="normal" title="Button">
+                                        <rect key="frame" x="0.0" y="198" width="30" height="56"/>
+                                        <fontDescription key="fontDescription" name="ABosaNovaSh" family="a_BosaNovaSh" pointSize="40"/>
+                                        <state key="normal">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="singleButtonPressed:" destination="01K-UG-kyg" eventType="touchUpInside" id="LHd-EH-jpK"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -257,25 +276,28 @@
                             <constraint firstItem="WE1-OH-jBP" firstAttribute="centerY" secondItem="N2H-XR-IV8" secondAttribute="centerY" constant="15" id="nBB-HM-5yF"/>
                             <constraint firstItem="aJM-aG-xQq" firstAttribute="leading" secondItem="uLS-WS-9iR" secondAttribute="leading" constant="20" id="twM-i2-5fr"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="WE1-OH-jBP"/>
-                                <exclude reference="Wia-xr-PrX"/>
-                            </mask>
-                        </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="fsw-N8-NUk">
-                        <barButtonItem key="rightBarButtonItem" title="DELETE ME" id="ged-mC-Hcr">
-                            <connections>
-                                <segue destination="Ad7-es-RRw" kind="show" id="VXp-37-HZY"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="fsw-N8-NUk"/>
                     <connections>
                         <outlet property="multipleStackView" destination="WE1-OH-jBP" id="3TC-Hz-yL8"/>
+                        <outlet property="questionLabel" destination="aJM-aG-xQq" id="ovQ-zY-Wyo"/>
+                        <outlet property="questionProgressView" destination="66X-YK-SS9" id="ajd-uU-56g"/>
                         <outlet property="singleStackView" destination="Wia-xr-PrX" id="VEI-wq-jGc"/>
+                        <outlet property="slider" destination="DDP-6n-6uF" id="cyD-mg-es0"/>
                         <outlet property="sliderStackView" destination="V8G-Hj-76C" id="luJ-1f-hg6"/>
-                        <segue destination="Ad7-es-RRw" kind="show" id="CTm-yL-IEL"/>
+                        <outletCollection property="singleButtons" destination="3jc-8A-35g" collectionClass="NSMutableArray" id="CbI-FV-Cj9"/>
+                        <outletCollection property="singleButtons" destination="GaP-8b-kaz" collectionClass="NSMutableArray" id="EJg-FD-FLm"/>
+                        <outletCollection property="singleButtons" destination="GP5-qK-c61" collectionClass="NSMutableArray" id="4NC-Zu-kwf"/>
+                        <outletCollection property="singleButtons" destination="Spj-nk-vnQ" collectionClass="NSMutableArray" id="60q-V7-Xkv"/>
+                        <outletCollection property="multiLabels" destination="J6m-iQ-LHw" collectionClass="NSMutableArray" id="c6T-XZ-ALd"/>
+                        <outletCollection property="multiLabels" destination="ClT-4c-POD" collectionClass="NSMutableArray" id="85x-76-XpL"/>
+                        <outletCollection property="multiLabels" destination="WhU-Ve-ckV" collectionClass="NSMutableArray" id="8q1-5f-ebN"/>
+                        <outletCollection property="multiLabels" destination="tSH-Nw-OEb" collectionClass="NSMutableArray" id="nHp-5r-sWZ"/>
+                        <outletCollection property="multiSwitches" destination="Jfs-2T-uDZ" collectionClass="NSMutableArray" id="qTo-0z-gak"/>
+                        <outletCollection property="multiSwitches" destination="MAE-I8-use" collectionClass="NSMutableArray" id="Lpb-HN-IRw"/>
+                        <outletCollection property="multiSwitches" destination="t0b-Tm-TTn" collectionClass="NSMutableArray" id="gOU-nm-pdN"/>
+                        <outletCollection property="multiSwitches" destination="Np3-5Y-mJh" collectionClass="NSMutableArray" id="L7Q-My-aN6"/>
+                        <segue destination="Ad7-es-RRw" kind="show" identifier="Results Segue" destinationCreationSelector="resultsSegue:" id="CTm-yL-IEL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mQi-8G-KVv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -287,21 +309,21 @@
             <objects>
                 <viewController id="Ad7-es-RRw" customClass="ResultsViewController" customModule="The_Wizard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vzi-xo-1pJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="51" translatesAutoresizingMaskIntoConstraints="NO" id="hqC-Cm-wKw">
-                                <rect key="frame" x="20" y="230" width="374" height="382.5"/>
+                                <rect key="frame" x="20" y="191.99999999999997" width="335" height="374.33333333333326"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Slizerin" translatesAutoresizingMaskIntoConstraints="NO" id="YMk-fP-hYC">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="300"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="300"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="300" id="SfJ-z8-vZk"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Итоговый результат" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9kY-jB-qSB">
-                                        <rect key="frame" x="0.0" y="351" width="374" height="31.5"/>
-                                        <fontDescription key="fontDescription" name="ABosaNova" family="a_BosaNova" pointSize="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Итоговый результат" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9kY-jB-qSB">
+                                        <rect key="frame" x="0.0" y="351" width="335" height="23.333333333333314"/>
+                                        <fontDescription key="fontDescription" name="ABosaNova" family="a_BosaNova" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -324,6 +346,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="9kY-jB-qSB" id="ZbT-e4-SwR"/>
+                        <outlet property="houseImage" destination="YMk-fP-hYC" id="G36-x7-b6J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ms-pM-AoP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="7NJ-04-lfG" userLabel="Exit" sceneMemberID="exit"/>
@@ -337,7 +363,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="07M-On-hcG"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8TM-Lv-1YL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.0039216279979999999" green="0.0039214612919999999" blue="0.0039215744470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -361,9 +387,6 @@
             <point key="canvasLocation" x="934.78260869565224" y="93.75"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="CTm-yL-IEL"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="Dambledor" width="614" height="860"/>
         <image name="Slizerin" width="416" height="466"/>

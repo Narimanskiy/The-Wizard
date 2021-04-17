@@ -17,19 +17,19 @@ struct Question {
             Answer(text: "Барсук", type: .puffendyi),
             Answer(text: "Орёл", type: .kogtevran),
             Answer(text: "Змея", type: .slizerin),
-        ]),
+        ].shuffled()),
         Question(text: "Я люблю:", type: .multiple, answers: [
             Answer(text: "Болтать с Хагридом", type: .griffindor),
             Answer(text: "Изучать природу", type: .puffendyi),
             Answer(text: "Квиддич", type: .kogtevran),
             Answer(text: "Зельеваренье", type: .slizerin),
-        ]),
+        ].shuffled()),
         Question(text: "Любимая стихия", type: .single, answers: [
             Answer(text: "Огонь", type: .griffindor),
             Answer(text: "Земля", type: .puffendyi),
             Answer(text: "Воздух", type: .kogtevran),
             Answer(text: "Вода", type: .slizerin),
-        ]),
+        ].shuffled()),
         Question(text: "Выбери", type: .slider, answers: [
             Answer(text: "Лорд Волан Де Морт", type: .slizerin),
             Answer(text: "Капелька зла", type: .kogtevran),
@@ -41,7 +41,7 @@ struct Question {
             Answer(text: "Жёлтый", type: .puffendyi),
             Answer(text: "Синий", type: .kogtevran),
             Answer(text: "Зелёный", type: .slizerin),
-        ])
-    ]
+        ].shuffled())
+    ].shuffled()
     
 }

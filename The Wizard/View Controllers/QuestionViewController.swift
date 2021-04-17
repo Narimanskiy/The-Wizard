@@ -101,6 +101,7 @@ class QuestionViewController: UIViewController {
         }
     }
     
+    
     @IBAction func singleButtonPressed(_ sender: UIButton) {
         let answers = Question.all[questionIndex].answers
         let index = sender.tag
